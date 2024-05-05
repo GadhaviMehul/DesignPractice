@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/single_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+   <!-- <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView1"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:background="@drawable/background"
+        android:padding="5dp"
+       android:layout_marginRight="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dcy"
+        app:riv_border_color="#DA59FA"
+        app:riv_border_width="2dp"
+        app:riv_corner_radius="30dp"
+        app:riv_mutate_background="true"
+        app:riv_oval="true" />-->
+
+   <!-- <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView1"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:padding="5dp"
+        android:src="@drawable/dcy"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favourites_recycler_view"
+        app:layout_constraintVertical_bias="0.5"
+        app:shapeAppearanceOverlay="@style/oval"
+        app:strokeColor="@color/teal_200"
+        app:strokeWidth="2dp"/>-->
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView1"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:background="@drawable/background"
+        android:padding="5dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dcy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favourites_recycler_view"
+        app:layout_constraintVertical_bias="0.365"
+        app:riv_border_color="#039BE5"
+        app:riv_border_width="2dp"
+        app:riv_corner_radius="30dp"
+        app:riv_mutate_background="true"
+        app:riv_oval="true"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

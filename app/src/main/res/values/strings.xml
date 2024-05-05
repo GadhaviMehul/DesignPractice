@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Anastasia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ananstasia">Ananstasia</string>
+    <string name="hello">Hello,</string>
+    <string name="your_featured_stories">Your Featured Stories</string>
+    <string name="myimage">myimage</string>
+    <string name="recyclerview">RecyclerView</string>
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E0E0"
+    tools:context=".MainViewFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_ht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="35dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="23dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/hello"
+        style="@style/hello_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:textColor="#1565C0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vs"
+        app:layout_constraintTop_toTopOf="@+id/guideline_ht" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        style="@style/anastasia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/ananstasia"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vs"
+        app:layout_constraintTop_toBottomOf="@+id/hello" />
+
+
+    <ImageButton
+        android:id="@+id/group_195"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/eclipse"
+        android:contentDescription="@string/myimage"
+        android:src="@drawable/ic_baseline_search_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toEndOf="@+id/materialTextView"
+        app:layout_constraintTop_toTopOf="@+id/guideline_ht"
+        tools:ignore="ImageContrastCheck" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView3"
+        style="@style/your_featur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/your_featured_stories"
+        app:layout_constraintEnd_toEndOf="@+id/materialTextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vs"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/recyclerview"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vs"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView3"
+        tools:listitem="@layout/single_image" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/picture_recycler_view"
+        android:layout_width="369dp"
+        android:layout_height="450dp"
+        android:contentDescription="@string/recyclerview"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_vs"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view"
+        app:layout_constraintVertical_bias="0.212"
+        tools:listitem="@layout/picture_single" />
+
+    <!-- <com.makeramen.roundedimageview.RoundedImageView
+         android:id="@+id/imageView1"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:background="@drawable/background"
+         android:padding="5dp"
+         android:scaleType="fitCenter"
+         android:src="@drawable/dcy"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.498"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/favourites_recycler_view"
+         app:layout_constraintVertical_bias="0.365"
+         app:riv_border_color="#DA59FA"
+         app:riv_border_width="2dp"
+         app:riv_corner_radius="30dp"
+         app:riv_mutate_background="true"
+         app:riv_oval="true" />-->
+
+    <!--  <ImageView
+          android:layout_width="369dp"
+          android:layout_height="246.0555dp"
+          android:layout_marginTop="32dp"
+          android:background="@drawable/picture_background"
+          android:src="@drawable/girl"
+          android:scaleType="centerCrop"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="@id/guideline_vs"
+          app:layout_constraintTop_toBottomOf="@+id/recycler_view" />-->
+
+    <!-- <com.makeramen.roundedimageview.RoundedImageView
+         android:id="@+id/imageView1"
+         android:layout_width="369dp"
+         android:layout_height="246.0555dp"
+         android:layout_marginTop="20dp"
+         android:scaleType="centerCrop"
+         android:src="@drawable/girl"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="@id/guideline_vs"
+         app:layout_constraintTop_toBottomOf="@+id/recycler_view"
+         app:riv_border_color="#000000"
+         app:riv_border_width="2dp"
+         app:riv_corner_radius="20dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
